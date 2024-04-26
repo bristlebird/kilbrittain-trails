@@ -11,7 +11,7 @@ Additionally, the site is targeted at tourists exploring West Cork's Wild Atlant
 ### Wireframes  
 <details open>
 <summary>Wireframe - Homepage Desktop</summary>  
-![homepage wireframe-desktop](docs/images/home_wireframe.png)
+![homepage wireframe-desktop](docs/images/kbt-home-wireframe.png)
 </details> 
 
 
