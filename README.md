@@ -1,12 +1,12 @@
 # Kilbrittain Trails
 
-Kilbrittain Trails is a community lead initiative that has developed a series of walking trails in and around the village of Kilbrittain and Courtmacsherry bay, a designated Special Area Conservation in West Cork that's renowned for its outstanding natural beauty and rich historical significance. Originally conceived as a printed leaflet that was supported by the Department of Rural and Community Development with funding from Pobal and Our Rural Futures, the Kilbrittain Trails website aims to promote the benefits of the area to a wider audience than might otherwise be reached through print. 
+Kilbrittain Trails is a community lead initiative that has developed a series of walking trails in and around the village of Kilbrittain and Courtmacsherry bay, a designated Special Area of Conservation (SAC) in West Cork that's renowned for its outstanding natural beauty and rich historical significance. Originally conceived as a printed leaflet that was supported by the Department of Rural and Community Development with funding from Pobal and Our Rural Futures, the Kilbrittain Trails website aims to promote the benefits of the area to a wider audience than might otherwise be reached through print. 
 
 As a community initiative, the website is primarily targeted at local and surrounding communities with the objectives of promoting healthy activity and lifestyle through walking, developing an appreciation of nature and raising awareness of the areas' rich and colourful history. 
 
-Additonally, the site is targeted at tourists exploring West Cork's Wild Atlantic Way, with the aim of encouraging them to stay in and explore the locality. The site aims to achieve this by highlighting various local attractions and amenities in addition to the natural and historical sites.
+Additionally, the site is targeted at tourists exploring West Cork's Wild Atlantic Way, with the aim of encouraging them to stay in and explore the locality. The site aims to achieve this by highlighting various local attractions and amenities useful to visitors from outside the area.
 
-![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+![Responsive Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
 
 ## Features 
 
