@@ -131,6 +131,7 @@ You can break the credits section up into Content and Media, depending on what y
 ### Media
 - Logo & maps: from the the Kilbrittain Trails leaflet PDF, kindly provided by Annette Hickey of Kilbrittain Trails.
 - Photos: The photos used on this site are from the Kilbrittain Trails leaflet and a variery of plaques on the walks, courtesy of Cathy Moir, Annette Hickey and Peggy Larkin.
+- Josefin Sans webfont created using FontSquirrel: https://www.fontsquirrel.com/tools/webfont-generator
 
 
 
