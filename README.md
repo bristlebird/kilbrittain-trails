@@ -8,6 +8,13 @@ Additionally, the site is targeted at tourists exploring West Cork's Wild Atlant
 
 ![Responsive Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
 
+### Wireframes  
+<details open>
+<summary>Wireframe - Homepage Desktop</summary>  
+![homepage wireframe-desktop](docs/images/home_wireframe.png)
+</details> 
+
+
 ## Features 
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
@@ -110,16 +117,21 @@ In this section you need to reference where you got your content, media and extr
 
 You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
-### Content 
+### Design credits
+- Color namer by Chirag Mehta: https://chir.ag/projects/name-that-color/ — used to name hex colors in css custom properties
 
-- The text for the Home page was taken from Wikipedia Article A
+### Code credits
+- normalize.css: https://github.com/necolas/normalize.css — makes browsers render all elements more consistently and in line with modern standards.
+
+### Content 
+- All content is courtesy of Annette Hickey, Kilbrittain Trails.
 - Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
+- Logo & maps: from the the Kilbrittain Trails leaflet PDF, kindly provided by Annette Hickey of Kilbrittain Trails.
+- Photos: The photos used on this site are from the Kilbrittain Trails leaflet and a variery of plaques on the walks, courtesy of Cathy Moir, Annette Hickey and Peggy Larkin.
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
 
 
 Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
