@@ -23,27 +23,46 @@
     
 </head>
 <body>
-    <header>
-      <a href="index.html"></a>
-      <h1 class="mast__logo">
-        <a href="/" accesskey="1" title="Home">
-          <img src="assets/img/kbt-logo-text.svg" width="248" height="67" alt="Kilbrittain Trails">
-        </a>
-    </h1>
-    <nav>
-      <ul>
-        <li><a href="index.html#walking-trails">Walking Trails</a></li>
-        <li><a href="things-to-do.html">Things to do</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-      </ul>
-    </nav>
-    </header>
-    
-    <main></main>
+  <!-- SVG Icon sprites -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icn-facebook" viewBox="0 0 100 100">
+      <path d="M66.208 50H55.053v30H42.196V50H36v-9.814h6.196V33.81c0-8.66 3.736-13.81 13.92-13.81H67.85v10.62h-9.584c-2.845-.006-3.198 1.482-3.198 4.25l-.016 5.315H67.91L66.21 50h-.002z"/>
+    </symbol>
+    <symbol id="icn-mail" viewBox="0 0 100 100">
+      <path d="M74.622 73.127c1.348 0 2.517-.445 3.51-1.324L61.14 54.81c-.41.29-.804.575-1.177.845-1.272.937-2.304 1.668-3.096 2.192-.793.525-1.847 1.06-3.163 1.607-1.317.547-2.544.82-3.682.82h-.067c-1.138 0-2.365-.273-3.682-.82-1.317-.547-2.37-1.082-3.163-1.607-.792-.524-1.824-1.255-3.096-2.192-.354-.26-.748-.545-1.173-.85L21.85 71.803c.993.88 2.162 1.324 3.51 1.324h49.267zM23.38 44.11c-1.27-.85-2.398-1.82-3.38-2.913V67.05l14.977-14.977C31.98 49.98 28.12 47.33 23.38 44.11zm53.25 0c-4.558 3.084-8.433 5.74-11.624 7.97l14.972 14.97V41.198c-.96 1.07-2.076 2.04-3.347 2.912z"/><path d="M74.622 26H25.355c-1.718 0-3.04.582-3.965 1.74-.927 1.162-1.39 2.612-1.39 4.352 0 1.406.614 2.93 1.84 4.57 1.228 1.64 2.534 2.928 3.917 3.865.76.536 3.046 2.126 6.862 4.77 2.06 1.427 3.85 2.67 5.39 3.745 1.31.914 2.44 1.706 3.37 2.363l.5.356.92.67c.72.53 1.322.95 1.802 1.27.48.33 1.06.69 1.74 1.09.68.4 1.323.71 1.925.91.6.2 1.16.3 1.672.3h.065c.51 0 1.07-.1 1.67-.3.603-.2 1.244-.5 1.925-.9.68-.402 1.26-.765 1.74-1.09.48-.323 1.08-.75 1.808-1.27l.92-.666c.224-.16.393-.28.5-.353l3.388-2.354c2.775-1.927 6.86-4.765 12.277-8.523 1.63-1.14 2.99-2.51 4.085-4.12 1.09-1.607 1.638-3.29 1.638-5.054 0-1.473-.53-2.733-1.59-3.783-1.052-1.05-2.31-1.575-3.76-1.575z"/>
+    </symbol>
+    <symbol id="icn-arrow-up" viewbox="0 0 104 54">
+      <path fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M102 51.909L52.412 2 2 52"/>
+    </symbol>
+    <symbol id="icn-location" viewBox="0 0 745 1024">
+      <path d="M468 581.818q-54.545 108.364-68.727 133.091-24.727 43.273-34.545 43.273-14.545 0-63.818-86.727t-62.727-126.727q-8.727-26.182-28.909-70.182t-26.727-60.727q-7.636-20-11.636-32t-8.364-33.818-4.364-42.182q0-32.364 8-63.818t25.636-61.091 42.727-52.182 62-36 80.545-13.455q67.636 0 112.727 36.727 22.909 18.545 40.182 38.364t27.455 39.273 16.545 35.455 8.909 34.545 3.091 28.545 0.545 24.545q0 28.727-14.545 68t-31.818 70.182-40.545 70.364-31.636 56.545zM288.364 283.273q0 14.545 3.091 28.909t10.364 28.364 17.818 24.727 27.091 17.273 36.545 6.545q41.818 0 63.455-28.727t21.636-67.636q0-36-26.545-67.818t-60-31.818q-36.727 0-65.273 27.636t-28.182 62.545z"/>
+    </symbol>
+  </svg>
+  <header>
+    <a href="index.html"></a>
+    <h1 class="mast__logo">
+      <a href="/" accesskey="1" title="Home">
+        <img src="assets/img/kbt-logo-text.svg" width="248" height="67" alt="Kilbrittain Trails">
+      </a>
+  </h1>
+  <nav>
+    <ul>
+      <li><a href="index.html#walking-trails">Walking Trails</a></li>
+      <li><a href="things-to-do.html">Things to do</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+  </nav>
+  </header>
+  
+  <main></main>
 
-    <footer>
-      
-    </footer>
-    
+  <footer>
+    <ul class="social-icons">
+      <li><a href="https://www.facebook.com/kilbrittaintidytowns"><svg class="icon icon--facebook"><title>Follow us on facebook</title><use xlink:href="#icn-facebook"></use></svg></a></li>
+      <li><a href="&#109;&#97;ilto&#58; %6B&#37;6&#57;&#37;6C&#98;ri&#116;%&#55;4a%&#54;9n&#116;r%61&#105;ls%40&#103;mai%6C&#46;c&#37;&#54;&#70;m" title="Email us"><svg class="icon"><title>Email us</title><use xlink:href="#icn-mail"></use></svg></a></li>
+    </ul>
+    <p class="copyright">@copy; Kilbrittain Trails 2024. All rights reserved. <span>Website by <a href="https://bristlebird.ie">Bristlebird</a> .<a href="https://github.com/bristlebird"><svg class="icon icon--github"><title>Bristlebird on Github</title><use xlink:href="#icn-github"></use></svg></a></span></p>      
+  </footer>
+  
 </body>
 </html>
