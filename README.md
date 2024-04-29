@@ -122,7 +122,7 @@ You can break the credits section up into Content and Media, depending on what y
 
 ### Code credits
 - reset.css: https://piccalil.li/blog/a-more-modern-css-reset/ — A more modern css reset by Andy Bell.
-- Email obfuscation: https://www.albionresearch.com/tools/obfuscator — makes it harder for spambots to scrape email address from the page
+- Email obfuscation: https://www.albionresearch.com/tools/obfuscator — makes it harder for spambots to scrape email address from the page.
 
 ### Content 
 - All content is courtesy of Annette Hickey, Kilbrittain Trails.
