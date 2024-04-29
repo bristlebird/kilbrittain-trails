@@ -52,7 +52,7 @@
   <!-- Main body content -->
   <main>
     <!-- Hero Section -->
-    <section id="hero">
+    <figure class="hero">
       <picture>
         <source srcset="
             /assets/img/boat-375.webp 375w, 
@@ -65,8 +65,8 @@
             /assets/img/boat-1280.jpg 1280w, 
             /assets/img/boat-1920.jpg 1920w" sizes="100vw" width="375" height="281">
       </picture>
-      <h2>Go where the locals go</h2>
-    </section>
+      <figcaption>Go where the locals go</figcaption>
+    </figure>
     <!-- Walks -->
     <section id="walking-trails">
       <h1>Walking Trails</h1>
@@ -116,18 +116,20 @@
 
     <!-- Map section -->
     <section id="walking-map">
-      <picture>
-        <source srcset="
-            /assets/img/map-375.webp 375w, 
-            /assets/img/map-750.webp 750w, 
-            /assets/img/map-1280.webp 1280w, 
-            /assets/img/map-1920.webp 1920w" sizes="100vw" type="image/webp">
-        <img class="" alt="Boat on the estuary at sunset" srcset="
-            /assets/img/map-375.jpg 375w, 
-            /assets/img/map-750.jpg 750w, 
-            /assets/img/map-1280.jpg 1280w, 
-            /assets/img/map-1920.jpg 1920w" sizes="100vw" width="375" height="280">
-      </picture>
+      <figure>
+        <picture>
+          <source srcset="
+              /assets/img/map-375.webp 375w, 
+              /assets/img/map-750.webp 750w, 
+              /assets/img/map-1280.webp 1280w, 
+              /assets/img/map-1920.webp 1920w" sizes="100vw" type="image/webp">
+          <img class="" alt="Boat on the estuary at sunset" srcset="
+              /assets/img/map-375.jpg 375w, 
+              /assets/img/map-750.jpg 750w, 
+              /assets/img/map-1280.jpg 1280w, 
+              /assets/img/map-1920.jpg 1920w" sizes="100vw" width="375" height="280">
+        </picture>
+      </figure>
       <ol class="marker-list">
         <li><a href="#marker-1">Village Park</a></li>
         <li><a href="#marker-2">Fin Whale</a></li>
