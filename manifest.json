@@ -2,9 +2,14 @@
     "short_name": "Kilbrittain Trails",
     "name": "Kilbrittain Trails — Scenic Walks in West Cork",
     "icons": [{
-      "src": "icon.png",
+      "src": "assets/ico/icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "assets/ico/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }],
     "start_url": "/?utm_source=homescreen",
     "background_color": "#fafafa",

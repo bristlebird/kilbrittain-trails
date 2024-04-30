@@ -119,10 +119,13 @@ You can break the credits section up into Content and Media, depending on what y
 
 ### Design credits
 - Color namer by Chirag Mehta: https://chir.ag/projects/name-that-color/ — used to name hex colors in css custom properties
+- Favicon created with : https://favicon.io/favicon-converter/
 
 ### Code credits
 - reset.css: https://piccalil.li/blog/a-more-modern-css-reset/ — A more modern css reset by Andy Bell.
 - Email obfuscation: https://www.albionresearch.com/tools/obfuscator — makes it harder for spambots to scrape email address from the page.
+- Pure css & html star rating: https://github.com/mukulkant/Star-rating-using-pure-css
+- Countries select dropdown: https://gist.github.com/danrovito/977bcb97c9c2dfd3398a - simple select list of all countries of the world (review page).
 
 ### Content 
 - All content is courtesy of Annette Hickey, Kilbrittain Trails.
