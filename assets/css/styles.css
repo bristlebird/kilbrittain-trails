@@ -109,11 +109,16 @@ html {
         scroll-behavior: auto;
     }
 }
+/* Remove figure margins */
+figure { 
+    margin: 0; 
+}
 
 body {
     /* BRAND COLOURS */
     /* logo colours */
     --porsche: #E8AC57; 
+    --ochre: #c68221;
     --cardinal: #CC2240;
     --sea-green: #28834A;
     --cloud-burst: #1F294A;
@@ -141,12 +146,14 @@ body {
 
     /* whites */
     --spring-wood: #f9faf5;
+    --pampas: #EFECE7;
 
     /* Block background colours */
     --bg-page-color: var(--spring-wood);
 
     /* Text colours */
     --text-color: var(--shuttle-gray);
+    --text-dark: var(--ebony-clay);
     --heading-color: var(--wedgewood);
     --link-color: var(--eden);
 
@@ -174,10 +181,16 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4  {
     line-height: 1.4em;
     color: var(--heading-color);    
 }
+h2 {
+    margin: 1.5em 0 0;
+}
 h4 {
     color: var(--grenadier);
     text-transform: uppercase;
     font-weight: 400;
+}
+p {
+    margin: .5em 0;
 }
 a {
     color: var(--link-color);
@@ -185,6 +198,10 @@ a {
 
 /* lists */
 /* ordered list counter numbers */
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
 .markers {
     margin-top: 2em;
     list-style: none;
@@ -282,9 +299,9 @@ img.full-width, figure.full-width {
     display: flex;
     justify-content: space-between;
     align-items: center;
-	will-change: transform, opacity, background-color, color;
-  	transition: opacity 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s, background-color 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
-
+	will-change: background-color;
+  	transition: background-color 0.3s ease-in-out 0s;
+    box-shadow: 0px 2px 12px 2px rgba(0,0,0,0.15);
 }
 .mast__logo {
     width: 186px;
@@ -302,15 +319,29 @@ img.full-width, figure.full-width {
     padding: 0 1rem;
     top: 100%;
     z-index: 4;
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    transform: translateX(100%);
     background-color: var(--periwinkle-opaque);
-	will-change: transform, opacity, background-color, color;
-  	transition: opacity 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s, background-color 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+	will-change: transform, opacity, background-color;
+  	transition: opacity 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s, background-color 0.3s ease-in-out 0s;
 }
 /* Nav toggle */
+.nav-toggle-label {
+    font-size: .875em;
+    text-transform: uppercase;
+    color: var(--link-color);
+}
 #nav-toggle:checked~nav {
-    display: block;
+    /* display: block; */
     background-color: var(--periwinkle-gray);
+    opacity: 1;
+    transform: translateX(0);
+}
+#nav-toggle:checked+label {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 4px;
 }
 .mast:has(#nav-toggle:checked) {
     background-color: var(--periwinkle-gray);
@@ -318,15 +349,9 @@ img.full-width, figure.full-width {
 #nav-toggle {
     display: none;
 }
-.nav-toggle-label {
-    font-size: .875em;
-    text-transform: uppercase;
-    color: var(--link-color);
-}
 .menu {
     list-style-type: none;
     margin: 1rem 0 1rem;
-    padding: 0;
 }
 .menu a {
     text-decoration: none;
@@ -335,4 +360,80 @@ img.full-width, figure.full-width {
     padding: .5rem;
     font-size: 1.25em;
 
+}
+
+/* Main content - uses .content-grid above */
+/* Hero image section */
+.hero {
+    position: relative;
+    box-shadow: 0px 2px 12px 2px rgba(0,0,0,0.15);
+}
+.hero > figcaption {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.25em;
+}
+
+/* Walking Trails section */
+.walks {
+    list-style-type: none;
+}
+.walks > li {
+    margin-bottom: 2em;
+}
+/* coloured coded walks headings */
+.walks h3 {
+    position: relative;
+    padding-bottom: .25em;
+    margin-bottom: .5em;
+}
+/* thick rounded underline */
+.walks h3::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 4px);
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--cardinal);
+    border-radius: 3px;
+}
+.walks > li:first-child h3 {
+    color: var(--cardinal);
+}
+.walks > li:nth-child(2) h3 {
+    color: var(--cloud-burst);
+}
+.walks > li:nth-child(2) h3::after {
+    background-color: var(--cloud-burst);
+}
+.walks > li:nth-child(3) h3 {
+    color: var(--ochre);
+}
+.walks > li:nth-child(3) h3::after {
+    background-color: var(--ochre);
+}
+.walks > li:nth-child(4) h3 {
+    color: var(--sea-green);
+}
+.walks > li:nth-child(4) h3::after {
+    background-color: var(--sea-green);
+}
+/* Walks detail */
+.walks__detail > ul {
+    list-style-type: none;
+}
+.walks__detail li {
+    background-color: var(--pampas);
+    margin-left: -.25rem;
+    margin-right: -.25rem;
+    width: calc(100% + .5rem);
+    padding: .125em .25rem;
+    margin-bottom: .25em;
+}
+.walks__detail strong {
+    color: var(--ebony-clay);
 }
