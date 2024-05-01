@@ -78,6 +78,7 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -452,4 +453,35 @@ img.full-width, figure.full-width {
 }
 .walks__detail strong {
     color: var(--ebony-clay);
+}
+
+/* Points of interest section */
+.flex-grid {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 1em;
+	gap: 2.5%;
+}
+/* using shorthand fixes IOS safari / chrome bug of items not wrapping: https://css-tricks.com/almanac/properties/f/flex-wrap/#comment-1590767 */
+.flex-grid > * {
+    flex: 1 1 180px; 
+    display: block;
+    padding: 0;
+    width: 45%;
+}
+@media screen and (min-width: 800px) {
+    .flex-grid > * {
+        padding: 0;
+    }
+    .flex-grid--thirds >* {
+        width: 30%;
+    }
+    .flex-grid--quarters >* {
+        width: 22%;
+    }
+    .flex-grid--fifths >* {
+        width: 17%;
+    }
 }
