@@ -137,6 +137,7 @@ body {
     --ebony-clay: #282c3c;
     --shuttle-gray: #696b76;
     --periwinkle-gray: #dee5f2;
+    --periwinkle-opaque: #dee5f2bf;
 
     /* whites */
     --spring-wood: #f9faf5;
@@ -272,11 +273,18 @@ img.full-width, figure.full-width {
 
 /* Site Header */
 .mast {
-    background: linear-gradient(to bottom, var(--periwinkle-gray), var(--periwinkle-gray) 50px, transparent 83px);
+    /* background: linear-gradient(to bottom, var(--periwinkle-gray), var(--periwinkle-gray) 50px, transparent 83px); */
+    background-color: var(--periwinkle-opaque);
     padding: 0 1rem;
     position: fixed;
-    z-index: 99;
+    z-index: 5;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	will-change: transform, opacity, background-color, color;
+  	transition: opacity 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s, background-color 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+
 }
 .mast__logo {
     width: 186px;
@@ -287,3 +295,44 @@ img.full-width, figure.full-width {
 }
 
 /* Main Navigation */
+.nav {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    top: 100%;
+    z-index: 4;
+    display: none;
+    background-color: var(--periwinkle-opaque);
+	will-change: transform, opacity, background-color, color;
+  	transition: opacity 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s, background-color 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+}
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+    background-color: var(--periwinkle-gray);
+}
+.mast:has(#nav-toggle:checked) {
+    background-color: var(--periwinkle-gray);
+}
+#nav-toggle {
+    display: none;
+}
+.nav-toggle-label {
+    font-size: .875em;
+    text-transform: uppercase;
+    color: var(--link-color);
+}
+.menu {
+    list-style-type: none;
+    margin: 1rem 0 1rem;
+    padding: 0;
+}
+.menu a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: .5rem;
+    font-size: 1.25em;
+
+}
