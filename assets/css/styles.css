@@ -110,10 +110,6 @@ html {
         scroll-behavior: auto;
     }
 }
-/* Remove figure margins */
-figure { 
-    margin: 0; 
-}
 
 body {
     /* BRAND COLOURS */
@@ -161,7 +157,7 @@ body {
     --bg-header: var(--spray-opaque);
     --bg-header-active: var(--spray);
     --bg-section: var(--skeptic);
-    --bg-section-dark: var(--eden);
+    --bg-section-dark: var(--wedgewood);
     --bg-section-light: var(--periwinkle-gray);
 
 
@@ -216,6 +212,10 @@ blockquote {
     color: var(--text-dark);
     margin-inline-start: 1rem;
 }
+/* Remove figure margins */
+figure { 
+    margin: 0 0 1em; 
+}
 
 /* lists */
 /* ordered list counter numbers */
@@ -224,7 +224,7 @@ ul, ol, li {
     padding: 0;
 }
 .markers {
-    margin-top: 2em;
+    margin-top: 1em;
     list-style: none;
     padding-inline-start: 2em;
 }
@@ -313,11 +313,14 @@ img.full-width, figure.full-width {
 .bg-section-light {
     background-color: var(--bg-section) ;
 }
-/* .flow > * + * {
-    margin-top: var(--flow-spacing, 1em);
-}   */
+.bg-section-dark {
+    background-color: var(--bg-section-dark) ;
+}
 .section-padding {
-    padding-block: 2.5rem;
+    padding-block: 2rem;
+}
+.section-padding > h2 {
+    margin: .25em 0 .5em;
 }
 /* Site Header */
 .mast {
@@ -467,9 +470,7 @@ img.full-width, figure.full-width {
     color: var(--ebony-clay);
 }
 /* Walks map section */
-.section-padding>h2 {
-    margin: 0 0 .5em;
-}
+
 
 /* Points of interest section */
 .flex-grid {
@@ -481,7 +482,7 @@ img.full-width, figure.full-width {
 }
 /* using shorthand fixes IOS safari / chrome bug of items not wrapping: https://css-tricks.com/almanac/properties/f/flex-wrap/#comment-1590767 */
 .flex-grid > * {
-    flex: 1 1 180px; 
+    flex: 1 1 160px; 
     display: block;
     padding: 0;
     width: 45%;
@@ -501,7 +502,9 @@ img.full-width, figure.full-width {
         width: 17%;
     }
 }
-
+.photos figure {
+    margin-bottom: 1em;
+}
 /* Footer */
 footer {
     background-color: var(--bg-section-light);
@@ -510,7 +513,6 @@ footer {
     text-align: center;
 }
 .assocs {
-    /* flex-basis: 120px; */
 	justify-content: space-evenly;
     list-style-type: none;
     padding-bottom: 2rem;
@@ -525,11 +527,103 @@ footer {
     width: 100%;
 
 }
-/* footer h3 {
-    color: var(--link-color-dark);
-} */
-.social-icons, .copyright {
-    background-color: var(--bg-section-dark);
+footer h3 {
+    color: var(--text-dark);
+}
+.copyright, footer a {
     color: #fff;
-    margin: 0;
+}
+.social-icons {
+	font-size: 0.75em;
+	padding: 0;
+    list-style-type: none; 
+    margin-bottom: .5rem;
+}
+.social-icons > * {
+    display: inline;
+}
+.social-icons a {
+    display: inline-block;
+    margin: 0 0 0.5em 0.5em;
+    color: var(--bronzed);
+    color: #fff;
+    width: 44px;
+    height: 44px;
+}
+.icon {
+    width: 44px;
+    height: 44px;
+	padding: 4px;
+	border-radius: 50%;
+	/* border: 1px solid transparent; */
+	background-color: var(--btn-color);
+	transition: opacity 0.3s ease-in-out 0s, background-color 0.3s ease-in-out 0s;
+}
+.icon use { fill: currentColor; }
+.copyright {
+    font-size: 0.875em;
+
+}
+.copyright span {
+    display: block;
+}
+.copyright .icon {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background-color: transparent;
+    padding-top: 6px;
+    margin: 0 0 -3px .5rem;
+}
+
+/* BACK TO TOP BUTTON */
+.backtotop {
+	display: none;
+	position: fixed; 
+	bottom: 15px; 
+	right: 15px; 
+	cursor: pointer;
+	z-index: 51;
+	text-decoration: none;
+	height: 3em;
+	width: 3em;
+	background-color: var(--btn-color);
+    border-radius: 50%; 
+	color: #fff;		
+	display: block;
+	padding: .55em 0.75em; 
+}
+
+@media screen and (min-width:800px) {
+    .backtotop {
+        bottom: 40px; 
+        right: 40px; 
+    }
+}
+/* .backtotop:hover {
+    background-color: var(--primary-dark);
+} */
+.backtotop .icon {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    border: none;
+    background-color: transparent;
+    stroke: currentColor;
+}	
+
+/* Helper classes from HTML5 Boilerplate */
+/*
+* Hide only visually, but have it available for screen readers:
+* http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*/
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
