@@ -126,6 +126,8 @@ You can break the credits section up into Content and Media, depending on what y
 - Email obfuscation: https://www.albionresearch.com/tools/obfuscator — makes it harder for spambots to scrape email address from the page.
 - Pure css & html star rating: https://github.com/mukulkant/Star-rating-using-pure-css
 - Countries select dropdown: https://gist.github.com/danrovito/977bcb97c9c2dfd3398a - simple select list of all countries of the world (review page).
+- Using CSS Counters for Custom List Number Styling: https://css-tricks.com/css-counters-custom-list-number-styling/
+- Using grid instead of containers/ wrappers: https://codepen.io/kevinpowell/pen/ExrZrrw / https://www.youtube.com/watch?v=c13gpBrnGEw
 
 ### Content 
 - All content is courtesy of Annette Hickey, Kilbrittain Trails.
