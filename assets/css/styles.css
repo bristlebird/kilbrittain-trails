@@ -137,16 +137,22 @@ body {
     --ebony-clay: #282c3c;
     --shuttle-gray: #696b76;
 
+    /* whites */
+    --spring-wood: #f9faf5;
+
+    /* Block background colours */
+    --bg-page-color: var(--spring-wood);
+
     /* Text colours */
     /* --text-color: #162821; */
     --text-color: var(--shuttle-gray);
-    /* --link-color: var(--oracle); */
-    --link-color: var(--bronzed);
+    --link-color: var(--oracle);
+    /* --link-color: var(--cardinal); */
 
-    --spring-wood: #f9faf5;
-    --bg-page-color: var(--spring-wood);
+    /* Button colours */
+    --btn-color: var(--bronzed);
 
-
+    margin: 0;
     /* use flex to push footer to bottom of page */
     display: flex;
     flex-direction: column;
@@ -154,10 +160,51 @@ body {
     background-color: var(--bg-page-color);
     color: var(--text-color);
     /* 1.125em: 18px font size */
-    font-size: 1.125em; 
+    font-size: 1em; 
     font-family: 'josefin sans', Arial, Helvetica, sans-serif;
+
 }
 
 a {
     color: var(--link-color);
+}
+
+/* lists */
+/* ordered list counter numbers */
+.markers {
+    margin-top: 2em;
+    list-style: none;
+    padding-inline-start: 3em;
+}
+.markers > li {
+    position: relative;
+    display: block;
+    margin: .75em 0;
+    counter-increment: mycounter;
+}
+.markers > li::before {
+    content: counter(mycounter);
+    background: var(--bronzed);
+    border-radius: 50%;
+    color: #fff;
+    font-size: .875em;
+    text-align: center;
+    position: absolute;
+    left: -2.5em;
+    top: 0;
+    height: 1.75em;
+    width: 1.75em;
+    padding-top: 0.275em;
+}
+.markers--split {
+    columns: 2;
+    font-size: .875em;
+}
+/* Horizontally align top of columns */
+.markers--split>li:first-child {
+    margin-top: 0em;
+}
+/* push 15th item to 2nd column to prevent spill of counter background */
+.markers--split>li:nth-child(15) {
+    margin-top: .875em;
 }
