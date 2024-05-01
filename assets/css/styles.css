@@ -150,6 +150,7 @@ body {
     --shuttle-gray: #696b76;
     --periwinkle-gray: #dee5f2;
     --periwinkle-opaque: #dee5f2bf;
+    --skeptic: #c9e6e1;
 
     /* whites */
     --spring-wood: #f9faf5;
@@ -159,12 +160,13 @@ body {
     --bg-page-color: var(--spring-wood);
     --bg-header: var(--spray-opaque);
     --bg-header-active: var(--spray);
+    --bg-section: var(--skeptic);
 
 
     /* Text colours */
     --text-color: var(--shuttle-gray);
     --text-dark: var(--ebony-clay);
-    --heading-color: var(--wedgewood);
+    --heading-color: var(--oracle);
     --link-color: var(--eden);
     --link-color-dark: var(--ebony-clay);
     --link-color-dark: var(--ebony-clay);
@@ -306,7 +308,15 @@ img.full-width, figure.full-width {
 .full-width img {
     width: 100%;
 }
-
+.bg-section-light {
+    background-color: var(--bg-section) ;
+}
+/* .flow > * + * {
+    margin-top: var(--flow-spacing, 1em);
+}   */
+.section-padding {
+    padding-block: 2.5rem;
+}
 /* Site Header */
 .mast {
     background-color: var(--bg-header);
@@ -454,6 +464,10 @@ img.full-width, figure.full-width {
 .walks__detail strong {
     color: var(--ebony-clay);
 }
+/* Walks map section */
+.section-padding>h2 {
+    margin: 0 0 .5em;
+}
 
 /* Points of interest section */
 .flex-grid {
@@ -484,4 +498,10 @@ img.full-width, figure.full-width {
     .flex-grid--fifths >* {
         width: 17%;
     }
+}
+
+/* Footer */
+footer {
+    background-color: var(--spray);
+
 }
