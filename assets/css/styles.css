@@ -197,7 +197,8 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4  {
 article h1 {
     font-size: 1.75em;
 }
-h2 {
+h2, .h2 {
+    font-size: 1.5em;
     margin: 1.5em 0 0;
 }
 h4 {
