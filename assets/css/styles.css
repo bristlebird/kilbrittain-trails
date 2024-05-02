@@ -679,12 +679,14 @@ main {
     min-height: 2em;
     padding: .75rem;
 }
-.btn {
+form .btn {
     background-color: var(--btn-color);
     color: #fff;
     text-transform: uppercase;
-    padding: 1rem 1rem .75rem 1rem;
+    padding: 1rem 2rem .75rem;
+    width: auto;
 }
+
 /* 5 star rating: https://codepen.io/hesguru/pen/BaybqXv */
 .rate {
     float: left;
