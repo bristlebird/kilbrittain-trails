@@ -477,6 +477,7 @@ main {
     width: calc(100% + .5rem);
     padding: .125em .25rem;
     margin-bottom: .25em;
+    color: var(--text-dark);
 }
 .walks__detail strong {
     color: var(--ebony-clay);
