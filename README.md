@@ -1,3 +1,4 @@
+
 # Kilbrittain Trails
 
 Kilbrittain Trails is a community lead initiative that has developed a series of walking trails in and around the village of Kilbrittain and Courtmacsherry bay, a designated Special Area of Conservation (SAC) in West Cork that's renowned for its outstanding natural beauty and rich historical significance. Originally conceived as a printed leaflet that was supported by the Department of Rural and Community Development with funding from Pobal and Our Rural Futures, the Kilbrittain Trails website aims to promote the benefits of the area to a wider audience than might otherwise be reached through print. 
@@ -6,7 +7,7 @@ As a community initiative, the website is primarily targeted at local and surrou
 
 Additionally, the site is targeted at tourists exploring West Cork's Wild Atlantic Way, with the aim of encouraging them to stay in and explore the locality. The site aims to achieve this by highlighting various local attractions and amenities useful to visitors from outside the area.
 
-![Responsive Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+![Responsive Mockup](docs/images/responsive-layouts.jpg)
 
 ### Wireframes  
 <details open>
@@ -23,59 +24,51 @@ In this section, you should go over the different parts of your project, and des
 
 - __Navigation Bar__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - This navigation bar is persistent and identical across all pages, is fully responsive across all screen sizes providing easy site navigation by using bright colours with high contrast legible links.  It remains fixed on scroll so that the user always has quick and easy access to all pages on the site.
 
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
+![Nav Bar](docs/images/feature-navbar.png)
 
-- __The landing page image__
+- __The Hero image__
 
-  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
-  - This section introduces the user to Love Running with an eye catching animation to grab their attention
+  - This features a large captivating image of a boat at sunset on the water in Kilbrittain Estuary with a tagline that suggests that there are hidden wonders to be discovered by walking the Kilbrittain trails. The purpose is to give the visitor a sense of the scenic coastal location.
 
-![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
+![Hero section](docs/images/feature-hero.jpg)
 
-- __Club Ethos Section__
+- __Walking Trails Section__
 
-  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
-  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
+  - This provides the details and descriptions of each of the waymarked walks which are colour coded to the map below. Each walk detail encourages walkers to review the trail if they've walked it by featuring a link to the review page which automatically selects the chosen trail from the dropdown. A pdf download link to each indivdual trail map provides further detail.
 
-![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
+![Walking Trails](docs/images/feature-trails.jpg)
 
-- __Meetup Times section__
+- __Overview map & Points of interest section__
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+  - This section displays an overview map of all the trails with detailed points of interest to be found along the way. Numbered markers link to further detail and a description of each point of interest below. A link to a larger PDF version of the overview map.
 
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+![Overview Map of Trails](docs/images/feature-maplegend.jpg)
+
+![Points of interest detail](docs/images/feature-poi.jpg)
 
 - __The Footer__ 
 
-  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media
+  - The footer section includes logos of the organisations involved in supporting the development of Kilbrtittain trails and also links to the Kilbrittain Trails Facebook page and a contact email address. The email address is obfuscated to make it more difficult for spam bots to scrape. 
+  - The Facebook page is run by the Kilbrittain Tidy Towns community of a voluntary basis and is a great source of news for local festivals and events, which is very useful to both the local community and visitors to the area. 
 
-![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
 
-- __Gallery__
+![Footer](docs/images/feature-footer.jpg)
 
-  - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
+- __The Locality Page__
 
-![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
+  - This page provides a list of local activities and amenities in the vicinity of Kilbrittain that will be useful to visitors, i.e. things to do, places to stay, eat and drink, choice of nearby beaches and transport. 
 
-- __The Sign Up Page__
+- __The Add a Review Page__
 
-  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
-
-![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+  - This page allows walkers to submit a review and a star rating for individual walks. They can select the walk to review from the dropdown menu if not already preselected when they visit this page via the 'Review this trail' links in Walking Trails section of the home page. The walker is also asked to submit their name and country of origin for the review. A future feature would be to display a curated selection of reviews on the site. Their email address could also be collected if required for verification. Handling such personal data would require a privacy policy to comply with GDPR regulations.
 
 ### Features Left to Implement
 
-- Another feature idea
+- Display a selection of submitted reviews on the site.
+- Add a gallery page to display more images of the scenic locality.
+- Add further images and a lightbox viewer to allow the visitor to view images more easily. 
 
 ## Testing 
 
@@ -91,9 +84,16 @@ If this section grows too long, you may want to split it off into a separate fil
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbristlebird.github.io%2Fkilbrittain-trails%2F)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbristlebird.github.io%2Fkilbrittain-trails&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) 
+
+### Web Perfomance
+
+All pages on the site achieve 100/100 on all Google Lighthouse Page speed:
+- Home page: https://pagespeed.web.dev/analysis/https-bristlebird-github-io-kilbrittain-trails/nq2wx9ge27?form_factor=mobile
+- Locality page: https://pagespeed.web.dev/analysis/https-bristlebird-github-io-kilbrittain-trails-locality-html/5vlozswd4o?form_factor=mobile
+- Submit a review page: https://pagespeed.web.dev/analysis/https-bristlebird-github-io-kilbrittain-trails-submit-review-html/83tqlxr5cf?form_factor=mobile
 
 ### Unfixed Bugs
 
@@ -101,27 +101,15 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
-
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
-
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
-
+This site has been deployed to Github pages from the master branch of this repository. 
+The live link can be found here - https://bristlebird.github.io/kilbrittain-trails/ 
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 ### Design credits
 - Color namer by Chirag Mehta: https://chir.ag/projects/name-that-color/ — used to name hex colors in css custom properties
-- Favicon created with : https://favicon.io/favicon-converter/
-- Josefin Webfont generated by Font Squirrel: https://www.fontsquirrel.com
-
+- Favicon created with: https://favicon.io/favicon-converter/
+- Josefin sans Webfont generated by Font Squirrel: https://www.fontsquirrel.com
 
 ### Code credits
 - reset.css: https://piccalil.li/blog/a-more-modern-css-reset/ — A more modern css reset by Andy Bell.
@@ -134,32 +122,8 @@ You can break the credits section up into Content and Media, depending on what y
 - 5 star rating radio buttons: https://codepen.io/hesguru/pen/BaybqXv
 
 ### Content 
-- All content is courtesy of Annette Hickey, Kilbrittain Trails.
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- All content is courtesy of Annette Hickey, [Kilbrittain Trails](https://www.facebook.com/kilbrittaintidytowns).
 
 ### Media
-- Logo & maps: from the the Kilbrittain Trails leaflet PDF, kindly provided by Annette Hickey of Kilbrittain Trails.
-- Photos: The photos used on this site are from the Kilbrittain Trails leaflet and a variery of plaques on the walks, courtesy of Cathy Moir, Annette Hickey and Peggy Larkin.
-- Josefin Sans webfont created using FontSquirrel: https://www.fontsquirrel.com/tools/webfont-generator
-
-
-
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
-
-## Other General Project Advice
-
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
+- Logo & maps: from the [Kilbrittain Trails brochure PDF](), kindly provided by Annette Hickey of Kilbrittain Trails.
+- Photos: The photos used on this site are from the Kilbrittain Trails brochure and a variety of plaques on the walks, courtesy of Cathy Moir, Annette Hickey and Peggy Larkin.
