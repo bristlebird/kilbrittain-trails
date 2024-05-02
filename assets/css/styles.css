@@ -652,6 +652,77 @@ main {
     color: var(--ebony-clay);
 }
 
+/* Review form page */
+.review-form {
+    padding-top: 6rem;
+}
+.review-form form {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 2px 12px 2px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+}
+.review-form form > * {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.review-form form > label, .review-form form > p {
+    margin-bottom: .25em;
+    color: var(--text-dark);
+}
+.text-input, select, textarea, .btn {
+    box-shadow: 0px 2px 12px 2px rgba(0,0,0,0.1);
+    background-color: var(--bg-section-light);
+    border: 1px solid #fff;
+    border-radius: 1.5rem;
+    min-height: 2em;
+    padding: .75rem;
+}
+.btn {
+    background-color: var(--btn-color);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem 1rem .75rem 1rem;
+}
+/* 5 star rating: https://codepen.io/hesguru/pen/BaybqXv */
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+    margin: 0 .25rem;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
 /* Footer */
 footer {
     background-color: var(--bg-section-light);

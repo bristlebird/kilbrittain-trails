@@ -130,6 +130,8 @@ You can break the credits section up into Content and Media, depending on what y
 - Countries select dropdown: https://gist.github.com/danrovito/977bcb97c9c2dfd3398a - simple select list of all countries of the world (review page).
 - Using CSS Counters for Custom List Number Styling: https://css-tricks.com/css-counters-custom-list-number-styling/
 - Using grid instead of containers/ wrappers: https://codepen.io/kevinpowell/pen/ExrZrrw / https://www.youtube.com/watch?v=c13gpBrnGEw
+- Code Institute Love Running mobile navigation checked input dropdown: https://github.com/Code-Institute-Org/love-running-2.0
+- 5 star rating radio buttons: https://codepen.io/hesguru/pen/BaybqXv
 
 ### Content 
 - All content is courtesy of Annette Hickey, Kilbrittain Trails.
