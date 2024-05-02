@@ -194,7 +194,7 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4  {
     line-height: 1.4em;
     color: var(--heading-color);    
 }
-article h1 {
+article h1, article .h1 {
     font-size: 1.75em;
 }
 h2, .h2 {
