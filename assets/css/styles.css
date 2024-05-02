@@ -508,7 +508,7 @@ main {
     top: -.25em;
     height: 1.875em;
     width: 1.875em;
-    padding-top: 0.375em;
+    padding-top: 0.125em;
 }
 .markers--split {
     columns: 2;
@@ -518,7 +518,6 @@ main {
     top: 0;
     height: 1.75em;
     width: 1.75em;
-    padding-top: 0.275em;
 }
 /* Horizontally align top of columns */
 .markers--split>li:first-child {
@@ -560,7 +559,6 @@ main {
     .markers>li:nth-child(16)::before{
         top: 0;
     }    
-
     .markers--split {
         columns: 4;
         /* font-size: .875em; */
