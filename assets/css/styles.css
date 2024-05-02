@@ -185,6 +185,7 @@ body {
     line-height: 1.4;
 }
 
+
 /* 
 // TYPOGRAPHY
 // ====================================================================
@@ -192,6 +193,9 @@ body {
 h1,h2,h3,h4,.h1,.h2,.h3,.h4  {
     line-height: 1.4em;
     color: var(--heading-color);    
+}
+article h1 {
+    font-size: 1.75em;
 }
 h2 {
     margin: 1.5em 0 0;
@@ -201,8 +205,10 @@ h4 {
     text-transform: uppercase;
     font-weight: 400;
 }
-p {
+p, li {
     margin: .75em 0;
+    /* limit line length to improve readability */
+    max-width: 36em;
 }
 a {
     color: var(--link-color);
@@ -222,6 +228,21 @@ ul, ol, li {
     margin: 0;
     padding: 0;
 }
+/* larger base font sizes on woder screens */
+@media screen and (min-width: 800px) {
+    body {
+        font-size: 1.125em; 
+    }
+    article h1 {
+        font-size: 2em;
+    }
+}
+@media screen and (min-width: 1152px) {
+    body {
+        font-size: 1.25em; 
+    }
+}
+
 /* Content grid - using grid instead of containers/wrappers: https://codepen.io/kevinpowell/pen/ExrZrrw  */
 .content-grid {
     --padding-inline: 1rem;
@@ -373,6 +394,11 @@ img.full-width, figure.full-width {
 }
 
 /* Main content - uses .content-grid above */
+main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;    
+}
 /* Hero image section */
 .hero {
     position: relative;
@@ -380,11 +406,12 @@ img.full-width, figure.full-width {
 }
 .hero > figcaption {
     position: absolute;
-    width: 100%;
     bottom: 0;
     color: #fff;
     padding: 1rem;
     font-size: 1.25em;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Tablet Hero  */
@@ -577,6 +604,54 @@ img.full-width, figure.full-width {
 .photos figure {
     margin-bottom: 1em;
 }
+/* Locality page sections */
+.locality {
+    padding-block: 0;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 2px 12px 2px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+}
+.locality:first-of-type {
+    margin-top: 1rem;
+}
+/* coloured coded walks headings */
+.locality h2 {
+    position: relative;
+    padding-bottom: .25em;
+    margin-bottom: .5em;
+    color: var(--grenadier);
+}
+/* thick rounded underline */
+.locality h2::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 4px);
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--grenadier);
+    border-radius: 3px;
+}
+.locality ul {
+    /* list-style-type: none; */
+    padding-inline-start: 1rem;
+}
+.locality li {
+    margin: .25em 0;
+    /* background-color: var(--pampas); */
+    /* margin-left: -.25rem;
+    margin-right: -.25rem; */
+    /* width: calc(100% + .5rem); */
+    /* padding: .125em .25rem; */
+    /* margin-bottom: .25em; */
+
+}
+.locality strong {
+    color: var(--ebony-clay);
+}
+
 /* Footer */
 footer {
     background-color: var(--bg-section-light);
@@ -634,7 +709,7 @@ footer h3 {
 .icon use { fill: currentColor; }
 .copyright {
     font-size: 0.875em;
-
+    margin: .5em auto;
 }
 .copyright span {
     display: block;
