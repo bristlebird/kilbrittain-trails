@@ -300,8 +300,9 @@ ul, ol, li {
 }
 img.full-width, figure.full-width {
     width: 100%;
-    max-height: 45vh;
+    max-height: 100vh;
     object-fit: cover;
+    overflow: hidden;
 }
 .content-grid > figure.full-width {
     margin: 0;
@@ -394,6 +395,30 @@ img.full-width, figure.full-width {
 
 }
 
+/* Tablet Header & Nav  */
+@media screen and (min-width: 800px) {
+    .mast {
+        background-color: var(--bg-header-active);
+    }
+    .nav {
+        position: relative;
+        opacity: 1;
+        transform: translateX(0);
+        background-color: transparent;
+        width: fit-content;
+    }
+
+    .nav-toggle-label, #nav-toggle {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+    .menu li {
+        padding-left: 1rem;
+    }    
+}
+
 /* Main content - uses .content-grid above */
 /* Hero image section */
 .hero {
@@ -409,6 +434,12 @@ img.full-width, figure.full-width {
     font-size: 1.25em;
 }
 
+/* Tablet Hero  */
+@media screen and (min-width: 800px) {
+    .hero > figcaption {
+        font-size: 2em;
+    }
+}
 /* Walking Trails section */
 .walks {
     list-style-type: none;
@@ -469,7 +500,24 @@ img.full-width, figure.full-width {
 .walks__detail strong {
     color: var(--ebony-clay);
 }
-/* Walks map section */
+/* Tablet Walks section */
+@media screen and (min-width: 800px) {
+    .walks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* margin-top: 1em; */
+        gap: 5%;
+    }
+    /* using shorthand fixes IOS safari / chrome bug of items not wrapping: https://css-tricks.com/almanac/properties/f/flex-wrap/#comment-1590767 */
+    .walks > * {
+        flex: 1 1 320px; 
+        display: block;
+        padding: 0;
+        width: 45%;
+    }
+
+}
 
 
 /* Points of interest section */
